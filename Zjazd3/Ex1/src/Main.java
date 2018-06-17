@@ -31,6 +31,15 @@ public class Main {
         }
 
         //Abstract
+        Car car = new Car();
+        Vehicle vehicle = new Car();
+
+        //Abstract MyMenu example
+        Menu menu = new MyMenu();
+
+        //Menu object from abstract class
+        MenuFromAbstractMenu menuFromAbstract = new MenuFromAbstractMenu();
+        menuFromAbstract.AbstractMethod();
     }
 
 }
