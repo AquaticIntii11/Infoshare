@@ -16,7 +16,7 @@ public class ProcessText {
         int count = 0;
         while(m.find()) {
             count++;
-            System.out.println("Found: dot at:  " + m.start() + " - " + m.end());
+            System.out.println("Found dot at:  " + m.start() + " - " + m.end());
         }
         System.out.println("Dots: " + count);
     }
