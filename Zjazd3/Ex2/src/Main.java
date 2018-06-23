@@ -1,3 +1,5 @@
+import com.sun.org.apache.bcel.internal.classfile.InnerClass;
+
 import java.util.*;
 
 public class Main {
@@ -13,5 +15,18 @@ public class Main {
         //Abstract clases
         User newUser = new Admin();
         newUser.showInfo();
+
+        class OuterClass {
+            private String outerString = "outer";
+            class InnerClass{}
+
+            public InnerClass inicjalizeInnerClass(){
+                //public String innerString = "inner";
+                return new InnerClass();
+            }
+        }
+        OuterClass outerClass = new OuterClass();
+        System.out.println(outerClass.outerString);
+
     }
 }
